@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using MaximouAgency.Models;
+using QuentinAgency.Models;
 
-namespace MaximouAgency.Services
+namespace QuentinAgency.Services
 {
     public class Reponse
     {
@@ -18,8 +18,8 @@ namespace MaximouAgency.Services
         private static HttpClient Http = new HttpClient();
         private static Hotel[] Hotels = new Hotel[]
         {
-            new Hotel() {Id = 1, Name = "AccorHotel", URL = "https://localhost:5003/api", Login = "MaximouAgency", Password = "1234", RoomsPath = "/rooms", BookingsPath = "/bookings"},
-            new Hotel() {Id = 2, Name = "BBHotel", URL = "https://localhost:5001/api", Login = "MaximouAgency", Password = "test", RoomsPath = "/rooms", BookingsPath = "/bookings"}
+            new Hotel() {Id = 1, Name = "AccorHotel", URL = "https://localhost:5003/api", Login = "QuentinAgency", Password = "4567", RoomsPath = "/rooms", BookingsPath = "/bookings"},
+            new Hotel() {Id = 2, Name = "BBHotel", URL = "https://localhost:5001/api", Login = "QuentinAgency", Password = "boss", RoomsPath = "/rooms", BookingsPath = "/bookings"}
         };
 
         public async static Task<Room[]> GetOffers()
