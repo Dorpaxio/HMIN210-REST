@@ -31,7 +31,7 @@ namespace MaximouAgency.Services
                     {
                         if (response.Response.StatusCode.ToString() == "OK")
                             offers.AddRange(response.Response.Content.ReadAsAsync<Room[]>()
-                                .ContinueWith(rooms => rooms.Result.Select(room => new Room() { Beds = room.Beds, HotelId = response.Hotel.Id, Id = room.Id, Price = room.Price })).Result);
+                                .ContinueWith(rooms => rooms.Result.Select(room => new Room() { Beds = room.Beds, HotelId = response.Hotel.Id, Id = room.Id, Price = room.Price, ImgUrl = room.ImgUrl })).Result);
                         return offers;
                     }).ToArray();
         }
