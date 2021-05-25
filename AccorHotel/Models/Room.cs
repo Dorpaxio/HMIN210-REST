@@ -10,5 +10,6 @@ namespace AccorHotel.Models
         public string Id { get; set; }
         public int Beds { get; set; }
         public double Price { get; set; }
+        public string ImgUrl { get; set; }
     }
 }

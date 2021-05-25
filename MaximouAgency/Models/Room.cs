@@ -11,5 +11,6 @@ namespace MaximouAgency.Models
         public int Beds { get; set; }
         public double Price { get; set; }
         public int HotelId { get; set; }
+        public string ImgUrl { get; set; }
     }
 }
